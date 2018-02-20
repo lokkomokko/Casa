@@ -1,0 +1,66 @@
+.footer {
+    margin-top: auto;
+    background-color: $color;
+    color: $white;
+    width: 100%;
+    padding: 43px 50px 51px;
+    height: 230px;
+    font-size: rem(12);
+
+    .row {
+        height: 100%;
+    }
+    a {
+        transition: .2s;
+        &:hover {
+            opacity: .7;
+        }
+    }
+    &__nav {
+        max-width: 286px;
+        &-item {
+            text-transform: uppercase;
+            display: block;
+            letter-spacing: 0.07em;
+        }
+        &-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__subs {
+        width: 437px;
+        position: absolute;
+        left: calc(50% - 437px / 2);
+        top: 43px;
+        //max-width: 437px;
+
+        &-input {
+            border-bottom: 1px solid $white;
+            margin-right: 20px;
+            flex: 1;
+            &::placeholder {
+                color: $white;
+            }
+        }
+        &-form {
+            display: flex;
+        }
+        &-btn {
+            cursor: pointer;
+            font-family: Arsenal;
+        }
+    }
+    &__social {
+        max-width: 156px;
+        &-col {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-name {
+            margin-top: auto;
+            margin-left: auto;
+        }
+    }
+}

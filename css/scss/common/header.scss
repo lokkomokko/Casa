@@ -1,0 +1,58 @@
+@mixin hover() {
+    transition: .2s;
+    &:hover {
+        opacity: .6;
+    }
+}
+
+.header {
+    font-size: em(12);
+    text-transform: uppercase;
+    position: relative;
+    &__wrapper {
+        height: 50px;
+    }
+    &__logo {
+        position: absolute;
+        width: 146px;
+        height: 20px;
+        top: calc(50% - 10px);
+        left: calc(50% - 146px / 2);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__nav {
+        letter-spacing: 0.07em;
+        max-width: 415px;
+        &-item {
+            text-align: center;
+            margin-right: em(15);
+            @include hover;
+        }
+    }
+    &__right {
+        letter-spacing: 0.05em;
+        max-width: 278px;
+    }
+    &__icon {
+        display: flex;
+        padding: 0px 7px;
+        justify-content: center;
+        &:not(.header__icon-phone) {
+            max-width: 40px;
+            @include hover;
+
+        }
+        &-phone {
+            margin-right: auto;
+        }
+        a {
+            margin-left: 8px;
+            white-space: nowrap;
+            transition: .2s;
+            @include hover;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ic_local_grocery_store</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-750 528)">
+<g id="ic_local_grocery_store">
+<mask id="mask0_outline" mask-type="alpha">
+<g id="Mask">
+<use xlink:href="#path0_fill" transform="translate(750.833 -526.333)" fill="#FFFFFF"/>
+</g>
+</mask>
+<g id="&#240;&#159;&#142;&#168; Color" mask="url(#mask0_outline)">
+<g id="Black">
+<use xlink:href="#path1_fill" transform="translate(739.167 -538.833)" fill="#404040"/>
+</g>
+<mask id="mask1_outline" mask-type="alpha">
+<g id="Black">
+<use xlink:href="#path1_fill" transform="translate(739.167 -538.833)" fill="#FFFFFF"/>
+</g>
+</mask>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 0 1.66669L 1.66669 1.66669L 4.66669 7.9917L 3.54169 10.0333C 3.40833 10.2667 3.33331 10.5417 3.33331 10.8333C 3.33331 11.75 4.08331 12.5 5 12.5L 15 12.5L 15 10.8333L 5.34998 10.8333C 5.23334 10.8333 5.14166 10.7417 5.14166 10.625L 5.16669 10.525L 5.91669 9.16669L 12.125 9.16669C 12.75 9.16669 13.3 8.82501 13.5833 8.30835L 16.5667 2.90002C 16.6334 2.78333 16.6667 2.64166 16.6667 2.5C 16.6667 2.04169 16.2917 1.66669 15.8333 1.66669L 3.50836 1.66669L 2.72498 0L 0 0ZM 5 13.3331C 4.08331 13.3331 3.34167 14.0831 3.34167 14.9998C 3.34167 15.9165 4.08331 16.6665 5 16.6665C 5.91669 16.6665 6.66669 15.9165 6.66669 14.9998C 6.66669 14.0831 5.91669 13.3331 5 13.3331ZM 11.6748 14.9998C 11.6748 14.0831 12.4164 13.3331 13.3331 13.3331C 14.2498 13.3331 14.9998 14.0831 14.9998 14.9998C 14.9998 15.9165 14.2498 16.6665 13.3331 16.6665C 12.4164 16.6665 11.6748 15.9165 11.6748 14.9998Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 0L 41.6667 0L 41.6667 41.6667L 0 41.6667L 0 0Z"/>
+</defs>
+</svg>

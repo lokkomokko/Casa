@@ -1,0 +1,48 @@
+// variables
+
+$color: #404040;
+$accent: #D8B06D;
+$white: #E0E0E0;
+$gray: #999999;
+// fonts
+$main_font: 'Noto Sans', sans-serif;
+$accent_font: 'Playfair Display', serif;
+
+
+// mixins
+%image-opacity {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+%img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+//px to em
+$browser-context: 14;
+@function em($pixels, $context: $browser-context) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1em;
+}
+
+
+@function rem($size) {
+  $remSize: $size / $browser-context;
+//Default font size on html element is 100%, equivalent to 16px;
+  @return #{$remSize}rem;
+}

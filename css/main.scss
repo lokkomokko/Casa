@@ -1,0 +1,40 @@
+@import "scss/bootstrap.css";
+@import "scss/normalize.css";
+@import "scss/settings/_settings";
+@import "scss/fonts/fonts";
+@import "scss/sprite/svg-sprite";
+@import "scss/common/common";
+@import "scss/common/slick";
+@import "scss/common/slick-theme";
+
+html {
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
+}
+
+body {
+    font-family: $main_font;
+    font-weight: normal;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 1rem;
+    overflow-x: hidden;
+    color: $color;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+@import "scss/common/header";
+@import "scss/main-page/main-page";
+@import "scss/footer/footer";
+@import "scss/media/media";
+@import "scss/item-page/item-page";

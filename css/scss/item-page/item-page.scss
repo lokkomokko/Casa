@@ -1,0 +1,88 @@
+.item {
+    margin-bottom: 15px;
+    &__left {
+        img {
+            @extend %img;
+        }
+    }
+    &__right {
+        padding-left: rem(55);
+    }
+    &__focus {
+        margin-bottom: 16px;
+        &-image {
+            height: 34vw;
+            max-height: 500px;
+        }
+    }
+    .slick-dots {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% + 20px);
+        margin: 20px -10px 0;
+        li {
+            width: calc(25% - 20px);
+            height: 9vw;
+            max-height: 150px;
+            margin: 0 10px 20px;
+            border: 4px solid transparent;
+            &.slick-active {
+                border: 4px solid $accent;
+            }
+            &:hover {
+                border: 4px solid $accent;
+            }
+            img {
+                @extend %img;
+            }
+        }
+    }
+    &__brand {
+        letter-spacing: 0.1em;
+        color: $gray;
+        text-transform: uppercase;
+        margin-top: -6px;
+    }
+    &__name {
+        letter-spacing: 0.01em;
+        font-size: em(30);
+        font-family: $accent_font;
+    }
+    &__desc {
+        letter-spacing: 0.02em;
+    }
+    &__price {
+        font-size: em(30px);
+        letter-spacing: 0.01em;
+        color: #0C1B2E;
+        margin-top: em(8px);
+        margin-bottom: em(2px);
+        span {
+            font-size: em(8px);
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        width: em(210px);
+        white-space: nowrap;
+        font-weight: bold;
+        margin-bottom: em(35);
+    }
+    &__params {
+        margin-bottom: em(25);
+        span {
+            color: $gray;
+        }
+        a {
+            border-bottom: 1px solid $color;
+            &:hover {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+    &__text {
+
+    }
+}
+
