@@ -46,16 +46,16 @@
     }
     &__name {
         letter-spacing: 0.01em;
-        font-size: em(30);
+        font-size: 3em;
         font-family: $accent_font;
     }
     &__desc {
         letter-spacing: 0.02em;
     }
     &__price {
-        font-size: em(30px);
+        font-size: 3em;
+        font-family: $accent_font;
         letter-spacing: 0.01em;
-        color: #0C1B2E;
         margin-top: em(8px);
         margin-bottom: em(2px);
         span {

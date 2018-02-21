@@ -1,0 +1,95 @@
+$sidebar_width: calc(100% - 15px);
+
+.catalog {
+    &__top-nav {
+        background-color: $white;
+        padding: 3px 0;
+        margin-top: -2px;
+        .all-brand-top-nav__list {
+            top: 2px;
+        }
+        &-arrow {
+            position: absolute;
+            bottom: 4px;
+            right: 13px;
+            img {
+                width: 6px;
+                transform: rotate(269deg);
+            }
+        }
+    }
+    &-sidebar {
+        &__item {
+            width: $sidebar_width;
+
+            &-title {
+                font-size: em(16);
+                font-weight: bold;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                margin-bottom: rem(6);
+                cursor: pointer;
+
+            }
+            &-wrap {
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                //padding-bottom: rem(8);
+                transition: .4s max-height, opacity;
+                overflow: hidden;
+                max-height: 0;
+                will-change: transform;
+                .brand-frame__cat-wrap  {
+                    padding-left: rem(10)
+                }
+                .brand-frame__cat-type--active .brand-frame__cat-wrap {
+                    margin: .5em 0 1em;
+                }
+
+            }
+            &--active {
+                .catalog-sidebar__item-wrap {
+                    border-top: 5px solid $accent;
+                    border-bottom: 5px solid $accent;
+                    padding-top: rem(15);
+                    padding-bottom: rem(8);
+                    max-height: 500px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__btn {
+            width: $sidebar_width;
+
+        }
+        &__filter {
+            width: $sidebar_width;
+            padding: 2em 0 2em;
+            border-top: 5px solid $white;
+            margin-top: 2px;
+
+            &-name {
+                font-size: em(12);
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 1em;
+            }
+            &-item {
+                font-size: em(12);
+                text-transform: uppercase;
+            }
+            &--no-upper {
+                .catalog-sidebar__filter-item {
+                    text-transform: capitalize;
+                }
+            }
+            &:not(.catalog-sidebar__filter--no-upper) {
+                margin-top: 15px;
+            }
+        }
+    }
+    &__products {
+        margin-bottom: em(100);
+    }
+}
+

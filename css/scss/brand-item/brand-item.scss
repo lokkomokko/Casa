@@ -1,0 +1,38 @@
+.brand-item {
+    &__product {
+        margin-bottom: em(40);
+    }
+    &__bg {
+        //background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) -10%, rgba(224, 224, 224, 0.5) 38%, rgba(255, 255, 255, 0.5) 130%);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) -14%, rgba(224, 224, 224, 0.5) 70%, rgba(255, 255, 255, 0.5) 130%);
+        top: 0px;
+    }
+    &__row {
+        position: relative;
+    }
+    &__top {
+        margin-bottom: em(130);
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            padding-top: em(65);
+            max-width: 613px;
+            img {
+                width: 100%;
+                max-width: 274px;
+                height: auto;
+            }
+        }
+        &-desc {
+            max-width: 600px;
+        }
+        &-title {
+            font-size: em(30);
+            font-family: $accent_font;
+            letter-spacing: 0.05em;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}

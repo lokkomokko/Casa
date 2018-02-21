@@ -4,6 +4,7 @@
 @import "scss/fonts/fonts";
 @import "scss/sprite/svg-sprite";
 @import "scss/common/common";
+@import "scss/common/checkbox";
 @import "scss/common/slick";
 @import "scss/common/slick-theme";
 
@@ -26,11 +27,13 @@ body {
     min-height: 100vh;
     width: 100%;
     font-size: 1rem;
+    line-height: 1.6;
     overflow-x: hidden;
     color: $color;
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
+
 }
 
 @import "scss/common/header";
@@ -38,3 +41,7 @@ body {
 @import "scss/footer/footer";
 @import "scss/media/media";
 @import "scss/item-page/item-page";
+@import "scss/all-brand/all-brand";
+@import "scss/brand-item/brand-item";
+@import "scss/catalog/catalog";
+@import "scss/basket/basket";
